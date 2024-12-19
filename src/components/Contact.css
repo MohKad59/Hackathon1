@@ -16,13 +16,20 @@
 			14% 41%,
 			0% 35%,
 			0 0
-		);
+		)
 		.avatar {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			margin-top: 20px;
 		}
+		/* .princesse {
+			width: 150px;
+			height: 150px;
+			border-radius: 150px;
+			object-fit: cover;
+			border: 2px solid #333;
+		} */
 	}
 	.form {
 	}

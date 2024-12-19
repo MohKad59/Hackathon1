@@ -13,10 +13,11 @@ function Contact() {
 		<div id="contact-container">
 			<div className="top-section">
 				<article className="avatar">
-					<img
+					{/* <img
 						src="/public/A creative light art piece featuring a Jedi Princess at a computer in a soft, dreamy atmosphere with hazy, soft light, artistic lighting, and abstract patterns.png"
-						alt="Portrait-Princesse"
-					/>
+						alt="Portrait"
+						className="Princesse"
+					/> */}
 				</article>
 				<img src="/envelope-open-regular-24.png" alt="letter-icon" />
 				<img src="/discord-logo-24.png " alt="discord-icon" />
