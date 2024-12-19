@@ -3,7 +3,6 @@
 	background: url("../assets/NavImg.jpeg") center / cover no-repeat;
 	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
 	padding: 1rem 0;
-	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 1000;
