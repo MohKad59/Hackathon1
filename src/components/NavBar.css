@@ -1,0 +1,77 @@
+.navbar {
+	width: 100%;
+	background: url("../assets/NavImg.jpeg") center / cover no-repeat;
+	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+	padding: 1rem 0;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+.navbar-container {
+	max-width: 1200px; /* Largeur maximale */
+	margin: 0 auto; /* Centrer horizontalement */
+	padding: 0 2rem; /* Espacement latéral */
+	display: flex; /* Flexbox pour aligner les éléments */
+	justify-content: space-between; /* Espacement entre logo et liens */
+	align-items: center; /* Centrer verticalement */
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	text-decoration: none; /* Pas de soulignement sur le logo */
+}
+
+.logo-image {
+	height: 180px;
+	width: auto;
+	object-fit: contain;
+	filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+	transition: all 0.3s ease-in-out; /* Ajouter une transition pour un effet plus fluide */
+}
+
+.logo-image:hover {
+	transform: scale(1.1); /* Agrandir légèrement le logo au survol */
+	filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.5)); /* Augmenter l'ombre portée */
+	color: #fff; /* Changer la couleur du logo (si applicable) */
+}
+
+.nav-links {
+	display: flex; /* Flexbox pour les liens */
+	gap: 3rem; /* Espacement entre les liens */
+}
+
+.nav-link {
+	font-family: "Playfair Display", serif; /* Police personnalisée */
+	color: #aa7aa2; /* Couleur du texte des liens */
+	text-decoration: none; /* Pas de soulignement sur les liens */
+	font-size: 1.1rem; /* Taille du texte */
+	position: relative; /* Pour le positionnement des effets d'animation */
+	padding: 0.5rem 0; /* Espacement vertical autour des liens */
+	transition: color 0.3s ease, transform 0.3s ease; /* Transition pour la couleur et la transformation */
+}
+
+.nav-link::after {
+	content: "";
+	position: absolute;
+	bottom: -5px; /* Positionner sous le texte */
+	left: 0;
+	width: 0;
+	height: 2px;
+	background-color: #f3e7f5; /* Couleur de l'effet de survol */
+	transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+	width: 100%; /* Étendre l'effet au survol */
+}
+
+.nav-link:hover {
+	color: #9333ea; /* Changer la couleur au survol */
+	transform: translateY(-2px); /* Légère élévation au survol */
+}
+
+.nav-text {
+	display: block;
+}
