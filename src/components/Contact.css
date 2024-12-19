@@ -1,0 +1,33 @@
+#contact-container {
+	background-color: rgba(224, 231, 250, 1);
+
+	.top-section {
+		background-color: rgba(243, 230, 244, 1);
+		width: 100%;
+		height: 75vh;
+		clip-path: polygon(
+			50% 0%,
+			100% 0,
+			61% 23%,
+			55% 44%,
+			49% 47%,
+			45% 49%,
+			6% 82%,
+			14% 41%,
+			0% 35%,
+			0 0
+		);
+		/* .avatar {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 20px; */
+	}
+	/* .princesse {
+			width: 150px;
+			height: 150px;
+			border-radius: 150px;
+			object-fit: cover;
+			border: 2px solid #333;
+		} */
+}
