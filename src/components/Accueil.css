@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    margin: 0;
+    padding: 0;
+    --cyan: #D2E1E3;
+    --blanc: #FFFAF8;
+
+}
+
+body {
+    margin: 0;
+    background-color: var(--blanc);
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px 30px 0px;
+    font-family: "PlayFair Display";
+    font-style: italic;
+    font-weight: 700;
+    color: #754646;
+}
+
+#accueilContainer {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    .firstSection {
+        background-color: var(--cyan);
+        margin: 50px 0 0 0;
+        width: 100%;
+
+        img {
+            border: 0px solid #F3E6F4;
+            border-radius: 50%;
+            background-color: #F3E6F4;
+            margin: -50px 0;
+            margin-left: -150px;
+            box-shadow: 5px 10px 10px #754646;
+        }
+    }
+
+    .secondSection {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px;
+        gap: 12rem;
+        
+        a {
+            text-decoration: none
+        }
+
+        img {
+            max-width: 200px;
+            max-height: 200px;
+            min-width: 200px;
+            min-height: 200px;
+            border: 5px solid #86bfc9;
+            border-radius: 50%;
+            background-color: #BCE2E9;
+            box-shadow: 5px 10px 10px #754646;
+        }
+
+        p {
+            display: flex;
+            justify-content: center;
+            color: #F17A7A;
+            font-weight: 800;
+        }
+    }
+
+    .thirdSection {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px;
+        gap: 12rem;
+
+        img {
+            border: 0px solid #F3E6F4;
+            border-radius: 50%;
+            background-color: #F3E6F4;
+            box-shadow: 5px 10px 10px #754646;
+        }
+
+        button {
+            padding: 10px 40px;
+            border: none;
+            border-radius: 25px;
+            background-color: #F3D7F3;
+            font-size: 1.5rem;
+            font-family: "PlayFaire Display";
+            font-style: italic;
+            font-weight: 600;
+            color: #754646;
+        }
+
+        button:hover {
+            filter: drop-shadow(0 0 2px #744040);
+            transform: translateX(1px);
+        }
+
+        button:active {
+            background-color: #ddb4dd;
+          }
+    }
+
+    .fourthSection {
+        
+    }
+
+    .fifthSection {
+        
+    }
+
+    .sixthSection {
+        
+    }
+}
