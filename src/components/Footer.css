@@ -1,0 +1,92 @@
+.footer {
+	width: 100%;
+	background: url("../assets/FootImg.jpeg") center / cover no-repeat;
+	padding: 2rem 0;
+	position: absolute;
+	bottom: 0;
+}
+
+.footer-container {
+	max-width: 1200px; /* Largeur maximale du footer */
+	margin: 0 auto; /* Centrer le footer horizontalement */
+	padding: 0 2rem; /* Espacement latéral */
+	text-align: center; /* Centrer le texte à l'intérieur du conteneur */
+}
+
+.social-links {
+	display: flex; /* Utiliser flexbox pour disposer les icônes */
+	justify-content: center; /* Centrer les icônes horizontalement */
+	align-items: center; /* Centrer les icônes verticalement */
+	gap: 2rem; /* Espacement entre les icônes */
+	padding: 1rem 0; /* Espacement vertical autour des icônes */
+}
+
+.social-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	transition: transform 0.3s ease;
+	padding: 0.5rem;
+	border-radius: 50%; /* Arrondir les coins des liens */
+}
+
+.social-icon {
+	width: 50px; /* Largeur des icônes */
+	height: 50px; /* Hauteur des icônes */
+	transition: filter 0.3s ease; /* Transition pour l'effet hover */
+}
+
+.social-link:hover {
+	transform: translateY(-3px); /* Effet de déplacement au survol */
+}
+
+.social-link:hover .social-icon {
+	filter: brightness(1.2); /* Éclaircir l'icône au survol */
+}
+
+/* Effets de survol spécifiques aux réseaux sociaux */
+.social-link:hover[href*="facebook"] .social-icon {
+	filter: drop-shadow(0 0 2px #1877f2);
+}
+
+.social-link:hover[href*="twitter"] .social-icon {
+	filter: drop-shadow(0 0 2px #1da1f2);
+}
+
+.social-link:hover[href*="linkedin"] .social-icon {
+	filter: drop-shadow(0 0 2px #0077b5);
+}
+
+.social-link:hover[href*="instagram"] .social-icon {
+	filter: drop-shadow(0 0 2px #e4405f);
+}
+
+/* Style du copyright */
+.copyright {
+	margin-top: 1rem; /* Espacement au-dessus du copyright */
+	font-size: 14px; /* Taille du texte du copyright */
+	color: rgb(29, 32, 34); /* Couleur du texte du copyright (gris) */
+}
+
+/* Styles responsives */
+@media screen and (max-width: 768px) {
+	.social-links {
+		gap: 1.5rem; /* Réduire l'espacement entre les icônes sur petits écrans */
+	}
+
+	.social-icon {
+		width: 20px; /* Réduire la taille des icônes sur petits écrans */
+		height: 20px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.social-links {
+		gap: 1rem; /* Réduire encore l'espacement sur très petits écrans */
+	}
+
+	.footer-container {
+		padding: 0 1rem; /* Réduire l'espacement latéral sur très petits écrans */
+	}
+}
