@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root {
     margin: 0;
@@ -16,6 +17,7 @@ body {
 h2 {
     display: flex;
     justify-content: center;
+    font-size: 3rem;
     padding: 50px 0px 30px 0px;
     font-family: "PlayFair Display";
     font-style: italic;
@@ -30,24 +32,78 @@ h2 {
     flex-direction: column;
 
     .firstSection {
-        background-color: var(--cyan);
-        margin: 50px 0 0 0;
-        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px 0px;
+        gap: 15rem;
+        background-color: #EEF1F9;
+
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        p {
+            max-width: 500px;
+            line-height: 30px;
+            font-family: "Manrope";
+        }
 
         img {
             border: 0px solid #F3E6F4;
             border-radius: 50%;
             background-color: #F3E6F4;
-            margin: -50px 0;
-            margin-left: -150px;
             box-shadow: 5px 10px 10px #754646;
+            transition: transform 0.7s ease-in-out;
+        }
+
+        img:hover {
+            transform: rotateY(180deg);
+            transition: transform 0.7s ease-in-out;
+        }
+        
+        h3 {
+            font-family: "PlayFaire Display";
+            font-style: italic;
+            font-size: 2rem;
+            margin: 0 0 100px 0;
+        }
+        
+        h4 {
+            font-family: "PlayFaire Display";
+            font-style: italic;
+            font-size: 1.5rem;
+            margin: 0 0 20px 0;
+            color: #754646;
+        }
+
+        @media (width <= 1400px) {
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+                padding-top: 50px;
+            }
+
+            img {
+                margin-top: -150px;
+                margin-bottom: 50px;
+            }
+        }
+
+        @media (width <= 600px) {
+            img {
+                width: 50%;
+            }
         }
     }
 
     .secondSection {
         display: flex;
         justify-content: center;
-        padding: 20px 0px;
+        padding: 50px 0px;
         gap: 12rem;
         
         a {
@@ -66,27 +122,51 @@ h2 {
         }
 
         p {
+            margin-top: 20px;
             display: flex;
             justify-content: center;
-            color: #F17A7A;
+            color: #754646;
             font-weight: 800;
+        }
+
+        @media (width <= 1100px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 75px;
         }
     }
 
     .thirdSection {
         display: flex;
         justify-content: center;
+        align-items: center;
+        text-align: center;
         padding: 20px 0px;
-        gap: 12rem;
+        gap: 15rem;
+        background-color: #EEF1F9;
+
+        p {
+            max-width: 400px;
+            line-height: 30px;
+            font-family: "Manrope";
+        }
 
         img {
             border: 0px solid #F3E6F4;
             border-radius: 50%;
             background-color: #F3E6F4;
             box-shadow: 5px 10px 10px #754646;
+            transition: transform 0.7s ease-in-out;
+        }
+
+        img:hover {
+            transform: rotateY(180deg);
+            transition: transform 0.7s ease-in-out;
         }
 
         button {
+            margin-top: 50px;
             padding: 10px 40px;
             border: none;
             border-radius: 25px;
@@ -96,27 +176,241 @@ h2 {
             font-style: italic;
             font-weight: 600;
             color: #754646;
+            cursor: pointer;
         }
 
         button:hover {
-            filter: drop-shadow(0 0 2px #744040);
-            transform: translateX(1px);
+            filter: drop-shadow(0 0 2px #daaada);
+            transition: color 0.3s ease, transform 0.3s ease;
+            transform: translateY(-2px);
         }
 
         button:active {
             background-color: #ddb4dd;
-          }
+        }
+
+        h3 {
+            font-family: "PlayFaire Display";
+            font-style: italic;
+            font-size: 2rem;
+            margin: 0 0 20px 0;
+        }
+
+        @media (width <= 1400px) {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 80px;
+
+            div:last-child {
+                margin-top: -100px;
+            }
+        }
+
+        @media (width <= 600px) {
+            img {
+                width: 50%;
+            }
+        }
     }
 
     .fourthSection {
+        display: flex;
+        justify-content: center;
+        padding: 50px 0px;
+        gap: 12rem;
         
+        a {
+            text-decoration: none
+        }
+
+        img {
+            max-width: 200px;
+            max-height: 200px;
+            min-width: 200px;
+            min-height: 200px;
+            border: 5px solid #86bfc9;
+            border-radius: 50%;
+            background-color: #BCE2E9;
+            box-shadow: 5px 10px 10px #754646;
+        }
+
+        img:hover {
+            filter: drop-shadow(0 0 3rem #86bfc9);
+            transition: all 1s;
+        }
+
+        p {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            color: #754646;
+            font-weight: 800;
+        }
+
+        @media (width <= 1100px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 75px;
+        }
     }
 
     .fifthSection {
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px 0px;
+        gap: 15rem;
+        background-color: #EEF1F9;
+
+        p {
+            max-width: 400px;
+            line-height: 30px;
+            font-family: "Manrope";
+        }
+
+        img {
+            border: 0px solid #F3E6F4;
+            border-radius: 50%;
+            background-color: #F3E6F4;
+            box-shadow: 5px 10px 10px #754646;
+            transition: transform 0.7s ease-in-out;
+        }
+
+        img:hover {
+            transform: rotateY(180deg);
+            transition: transform 0.7s ease-in-out;
+        }
+
+        button {
+            margin-top: 50px;
+            padding: 10px 40px;
+            border: none;
+            border-radius: 25px;
+            background-color: #F3D7F3;
+            font-size: 1.5rem;
+            font-family: "PlayFaire Display";
+            font-style: italic;
+            font-weight: 600;
+            color: #754646;
+            cursor: pointer;
+        }
+
+        button:hover {
+            filter: drop-shadow(0 0 2px #daaada);
+            transition: color 0.3s ease, transform 0.3s ease;
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            background-color: #ddb4dd;
+        }
+
+        h3 {
+            font-family: "PlayFaire Display";
+            font-style: italic;
+            font-size: 2rem;
+            margin: 0 0 20px 0;
+        }
+
+        @media (width <= 1400px) {
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+                padding-top: 50px;
+            }
+
+            img {
+                margin-top: -150px;
+                margin-bottom: 50px;
+            }
+        }
+
+        @media (width <= 600px) {
+            img {
+                width: 50%;
+            }
+        }
+    }
+    
+    .titleShop {
+        background-color: #EEF1F9;
+    }
+    
+    #dynamicTitle1 {
+        font-size: 36px;
+        font-weight: bold;
+        transition: opacity 1s ease-in-out; /* Transition de l'opacité pour un effet de fondu */
+    }
+    
+    #dynamicTitle2 {
+        font-size: 36px;
+        font-weight: bold;
+        transition: opacity 1s ease-in-out; /* Transition de l'opacité pour un effet de fondu */
+    }
+    
+    .r2d2 {
+        display: flex;
+        justify-content: center;
+        position: relative; /* Nécessaire pour positionner la bulle par-dessus l'image */
+        width: 300px;
+        overflow: hidden; /* Empêche tout débordement de l'image ou de la bulle */
+    }
+    
+    /* L'image */
+    .r2d2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Permet à l'image de couvrir toute la surface sans déformation */
+        transition: opacity 0.3s ease; /* Transition fluide sur l'image */
+    }
+    
+    /* La bulle contenant le texte */
+    .r2d2 .r2d2bubble {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0); /* La bulle commence par être cachée et réduite */
+        background-color: rgba(243, 215, 243, 0.8); /* Fond de la bulle */
+        color: white;
+        width: 100%;
+        height: 100%;
+        border: 2px solid #daaada;
+        border-radius: 20%;
+        font-size: 18px;
+        text-align: center;
+        opacity: 0; /* Bulle invisible au départ */
+        transition: transform 0.3s ease, opacity 0.3s ease; /* Transition douce pour l'agrandissement et l'opacité */
+    }
+    
+    /* Effet au survol de l'image : la bulle se déploie */
+    .r2d2:hover .r2d2bubble {
+        transform: translate(-50%, -50%) scale(1); /* La bulle s'agrandit */
+        opacity: 1; /* La bulle devient visible */
+    }
+    
+    /* Optionnel : ajouter un léger fondu sur l'image */
+    .r2d2:hover img {
+        opacity: 0.5; /* L'image devient légèrement transparente */
     }
 
-    .sixthSection {
+    @media (width <= 600px){
+        .titleShop {
+            font-size: 2rem;
+        }
         
+        #dynamicTitle1 {
+            display: flex;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        #dynamicTitle2 {
+            display: flex;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
     }
 }
