@@ -15,6 +15,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .logo {
@@ -39,6 +40,8 @@
 .nav-links {
 	display: flex;
 	gap: 2rem;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .nav-link {
@@ -53,6 +56,7 @@
 	background-color: #f3d7f3;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 	transition: all 0.3s ease;
+	position: relative;
 }
 
 .nav-link:hover {
@@ -78,4 +82,48 @@
 
 .nav-text {
 	display: block;
+}
+
+@media screen and (max-width: 768px) {
+	.navbar-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.logo {
+		margin-bottom: 1rem;
+	}
+
+	.nav-links {
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.logo-image {
+		height: 100px;
+		width: 100px;
+	}
+
+	.nav-link {
+		font-size: 1rem;
+		padding: 0.4rem 0.8rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.navbar {
+		min-height: auto;
+		padding: 0.5rem 0;
+	}
+
+	.logo-image {
+		height: 80px;
+		width: 80px;
+	}
+
+	.nav-link {
+		font-size: 0.9rem;
+		padding: 0.3rem 0.6rem;
+	}
 }
