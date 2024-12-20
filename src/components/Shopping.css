@@ -2,10 +2,6 @@
     margin: 0;
 }
 
-.navbar {
-    position: fixed;
-}
-
 #shoppingContainer {
     background-image: url(../assets/boutique.jpeg);
     width: 100wv;
@@ -39,7 +35,7 @@
 #article {
     display: flex;
     justify-content: space-around;
-    min-width: 100vw;
+    min-width: calc(100vw -2rem);
     margin-top: 50px;
 
     div {
