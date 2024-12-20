@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../assets/Logo.png";
-import Shopping from "./components/Shopping.tsx";
+import logo from "../assets/Logo Hackathon1.jpg";
+import Shopping from "./Shopping";
 
 const Navbar = () => {
 	return (
