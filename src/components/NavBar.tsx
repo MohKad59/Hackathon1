@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../assets/Logo.png";
+import Shopping from "./components/Shopping.tsx";
 
 const Navbar = () => {
 	return (
@@ -14,8 +15,8 @@ const Navbar = () => {
 					<Link to="/" className="nav-link">
 						<span className="nav-text">Accueil</span>
 					</Link>
-					<Link to="/boutique" className="nav-link">
-						<span className="nav-text">Boutique</span>
+					<Link to="/shopping" className="nav-link">
+						<span className="nav-text">Shopping</span>
 					</Link>
 					<Link to="/contact" className="nav-link">
 						<span className="nav-text">Contact</span>

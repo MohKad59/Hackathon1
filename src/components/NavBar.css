@@ -9,7 +9,6 @@
 }
 
 .navbar-container {
-	max-width: 1200px; /* Largeur maximale */
 	margin: 0 auto; /* Centrer horizontalement */
 	padding: 0 2rem; /* Espacement latéral */
 	display: flex; /* Flexbox pour aligner les éléments */
